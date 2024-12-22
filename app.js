@@ -10,7 +10,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
-app.use(express.static(path.join(_dirname,'public')));
+
 // Session configuration
 app.use(
   session({
