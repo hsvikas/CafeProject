@@ -4,7 +4,6 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
-    
   },
   "keywords": [],
   "author": "",
@@ -13,10 +12,12 @@
   "dependencies": {
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.3",
+    "connect-redis": "^8.0.1",
     "ejs": "^3.1.10",
     "express": "^4.21.1",
     "express-session": "^1.18.1",
     "mongoose": "^8.8.2",
-    "nodemailer": "^6.9.16"
+    "nodemailer": "^6.9.16",
+    "redis": "^4.7.0"
   }
 }

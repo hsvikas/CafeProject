@@ -2,6 +2,7 @@ const express  = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const session = require('express-session');
+const RedisStore = require('connect-redis')(session);
 const bcrypt  = require('bcrypt');
 const User    = require('./models/User');
 const app = express();
@@ -13,6 +14,14 @@ app.set('views',path.join(_dirname,'views'));
 app.set('view engine', 'ejs');
 
 // Session configuration
+app.use(session({
+  store:new RedisStore({host:
+    'localhost',port:6379}),
+    secret :"your-secret",
+    resave: false,
+    saveUninitialized: false,
+
+  }));
 app.use(
   session({
     secret: 'secret-key',
