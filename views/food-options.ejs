@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Options</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Food Options for <%= mode %></h1>
+  <ul>
+    <% foodOptions.forEach(food => { %>
+      <li><%= food %></li>
+    <% }); %>
+  </ul>
+  <a href="/mood-selector">Go Back</a>
+  <a href="/table-selection">BOOK-YOUR-TABLE</a>
+</body>
+</html>

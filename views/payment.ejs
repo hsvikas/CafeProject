@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Payment Details</h1>
+  
+  <h2>Food Items:</h2>
+  <ul>
+    <% foodItems.forEach(item => { %>
+      <li><%= item %> - ₹<%= foodPrices[item] %></li>
+    <% }); %>
+  </ul>
+  
+  <h3>Table Charge: ₹<%= tableCharge %></h3>
+  <h3>GST (18%): ₹<%= gstAmount %></h3>
+  <h3>Total Bill: ₹<%= totalBill %></h3>
+
+  <form action="/confirm-payment" method="POST">
+    <label for="paymentType">Payment Type:</label>
+    <select id="paymentType" name="paymentType" required>
+      <option value="single">Single Payment</option>
+      <option value="group">Group Split Payment</option>
+    </select><br />
+    
+    <button type="submit">Proceed to Payment</button>
+  </form>
+</body>
+</html>

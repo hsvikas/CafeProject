@@ -1,0 +1,226 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Main Content */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Forms */
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  form input,
+  form select,
+  form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Login and Register Pages */
+  .login-container,
+  .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-container form,
+  .register-container form {
+    width: 300px;
+  }
+  
+  .login-container input,
+  .register-container input {
+    margin-bottom: 15px;
+  }
+  
+  .login-container h2,
+  .register-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* State and District Selection */
+  .state-district-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .state-district-container select {
+    margin-bottom: 20px;
+    width: 200px;
+  }
+  
+  .state-district-container button {
+    width: 220px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .state-district-container button:hover {
+    background-color: #555;
+  }
+  
+  /* Food Options */
+  .food-options-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+  }
+  
+  .food-options-container .food-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+  }
+  
+  .food-options-container .food-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .food-options-container h3 {
+    text-align: center;
+  }
+  
+  /* Table Selection */
+  .table-selection-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .table-selection-container select,
+  .table-selection-container button {
+    width: 200px;
+    margin: 10px;
+  }
+  
+  /* Payment */
+  .payment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .payment-container h2 {
+    text-align: center;
+  }
+  
+  .payment-container .total {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .payment-container button {
+    width: 220px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .payment-container button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Feedback */
+  .feedback-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .feedback-container textarea {
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+  }
+  
+  .feedback-container button {
+    width: 100px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .feedback-container button:hover {
+    background-color: #555;
+  }
+  
+  /* Table View */
+  .tables-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .tables-container .table-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tables-container .table-item:hover {
+    background-color: #f0f0f0;
+  }

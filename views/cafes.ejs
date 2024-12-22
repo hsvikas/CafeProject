@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Available Cafes</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Available Cafes in <%= state %>, <%= district %></h1>
+    <form action="/mood-selector" method="POST">
+      <% cafes.forEach(function(cafe, index) { %>
+        <div>
+          <input type="radio" id="cafe<%= index %>" name="cafe" value="<%= cafe %>" required>
+          <label for="cafe<%= index %>"><%= cafe %></label>
+        </div>
+      <% }); %>
+      <button type="submit">Next</button>
+    </form>
+</body>
+</html>

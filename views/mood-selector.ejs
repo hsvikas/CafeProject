@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Mood</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Select Your Mode</h1>
+  <form action="/food-options" method="POST">
+    <label for="mode">Mode:</label>
+    <select id="mode" name="mode" required>
+      <option value="Birthday Party">Birthday Party</option>
+      <option value="Business Meeting">Business Meeting</option>
+      <option value="Casual Hangout">Casual Hangout</option>
+      <option value="Romantic Date">Romantic Date</option>
+      <option value="Family Gathering">Family Gathering</option>
+    </select><br />
+    <button type="submit">Show Food Options</button>
+    
+  </form>
+</body>
+</html>

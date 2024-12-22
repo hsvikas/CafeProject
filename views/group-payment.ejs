@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group Payment</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Group Payment</h1>
+  
+  <h3>Total Amount to Pay: ₹<%= amountPerPerson %> per person</h3>
+  <p>Group size: <%= groupSize %> members</p>
+  
+  <form action="/submit-feedback" method="POST">
+    <label for="paymentConfirmation">Confirm Payment:</label>
+    <input type="checkbox" id="paymentConfirmation" name="paymentConfirmation" required>
+    <button type="submit">Confirm Payment</button>
+    <a href="/feedback"></a>
+  </form>
+</body>
+</html>
