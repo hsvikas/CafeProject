@@ -4,14 +4,13 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 const bcrypt  = require('bcrypt');
 const User    = require('./models/User');
-
 const app = express();
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
-
+app.use(express.static(path.join(_dirname,'public')));
 // Session configuration
 app.use(
   session({
@@ -334,7 +333,7 @@ app.get('/exit', (req, res) => {
 
 
 // Start the server
-const PORT = 3000;
+const PORT = process.env.PORT||3000;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
